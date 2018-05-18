@@ -1,0 +1,30 @@
+#sidebar
+  @media mq-normal
+    column(sidebar-column)
+
+.widget-wrap
+  margin: block-margin 0
+
+.widget-title
+  @extend $block-caption
+  text-shadow: 0 0px #fff
+  letter-spacing: 0px
+
+.widget
+  color: color-sidebar-text
+  text-shadow: 0 0px #fff
+  font-weight: bold
+  background: color-widget-background
+  box-shadow: 0 -1px 4px color-widget-border inset
+  border: 1px solid color-widget-border
+  padding: 15px
+  border-radius: 3px
+  a
+    color: color-sidebar-text
+    text-decoration: underline
+    &:hover
+      color: color-link
+  ul, ol, dl
+    ul, ol, dl
+      margin-left: 15px
+      list-style: disc

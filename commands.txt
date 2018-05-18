@@ -1,0 +1,5 @@
+hexo generate --watch
+hexo clean
+hexo generate
+hexo server
+hexo deploy
