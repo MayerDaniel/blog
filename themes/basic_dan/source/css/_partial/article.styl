@@ -1,5 +1,6 @@
 .article
   margin: block-margin 0
+  margin-top: block-margin*.2
 
 .article-inner
   @extend $block
@@ -12,21 +13,21 @@
   @extend $block-caption
   float: left
 
+
 .article-category
   float: left
   line-height: 1em
   color: #ccc
-  text-shadow: 0 1px #fff
   margin-left: 8px
   &:before
     content: "\2022"
 
 .article-category-link
   @extend $block-caption
-  margin: 0 12px 1em
+
 
 .article-header
-  padding: article-padding article-padding 0
+  padding: 0 article-padding 0
 
 .article-title
   text-decoration: none
@@ -213,7 +214,7 @@
 
 .article-nav-caption
   text-transform: uppercase
-  letter-spacing: 2px
+  letter-spacing: 0px
   color: color-border
   line-height: 1em
   font-weight: bold

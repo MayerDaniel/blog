@@ -3,6 +3,12 @@ if sidebar is bottom
 else
   @import "sidebar-aside"
 
+a
+  color: color-sidebar-text
+  text-decoration: none
+  &:hover
+    color: color-link
+
 .widget
   @extend $base-style
   line-height: line-height

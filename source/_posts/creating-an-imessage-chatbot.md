@@ -1,5 +1,6 @@
 ---
 title: Creating an iMessage Chatbot
+category: Projects
 ---
 
 During my internship with [CrowdStrike](https://crowdstrike.com) last summer, I was introduced to [Hubot](https://hubot.github.com/). Hubot is fun, in on all of the jokes, and exceedingly helpful. Between the automation of menial tasks and joke/novelty functions, our office chatbot was a mainstay in most threads of import.
