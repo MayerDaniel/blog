@@ -35,7 +35,7 @@ For this project, you will end up creating two different projects within Visual 
 
 When creating a new project in Visual Studio, search "dll" in the top bar, and select the basic DLL project template.
 
-![DLL Project in VS](./static/PI1/dll_proj.png "DLL Project in VS")
+![DLL Project in VS](Process-Injection-101-Hello-World/dll_proj.png "DLL Project in VS")
 
 Once you have selected a name and filepath for your project, you will be presented with the following code:
 
@@ -153,7 +153,7 @@ To do this, your injector needs to perform just 7 api calls:
 * [GetProcAddress] to find the address of [LoadLibrary] once you have a handle to kernel32.dll (due to the way windows works, you can assume this address will be the same in your target process - more on that later).
 * [CreateRemoteThread] to create a new thread in the target process that will call LoadLibrary with the payload's path as an argument.
 
-![Console Application Project in VS](./static/PI1/console_proj.png "Console Application Project in VS")
+![Console Application Project in VS](Process-Injection-101-Hello-World/console_proj.png "Console Application Project in VS")
 
 #### GetFullPathName
 To make my injector as easy to follow as possible, I include a bunch of print statements and user prompts, but none of that is necessary, you could hardcode the PID and DLL path if you want, or input them as arguments when you call you injector from the commandline. For my example code, I prompt the user and read `cin`. I also tried to make my variables as self explanatory as possible, but if you don't know what a variable is, check one of the earlier steps to see where it is defined. You can also see the whole source [here](GITHUB).
@@ -293,7 +293,7 @@ Note the casting of `loadLibraryAddress`, as discussed in the step above!
 
 And with that, you've done it! All thats left is to identify the PID of your target process (I pretty much always have [Process Hacker](https://processhacker.sourceforge.io/) open) and inject away!
 
-![Injected!](./static/PI1/injected.png "Console Application Project in VS")
+![Injected!](Process-Injection-101-Hello-World/injected.png "Console Application Project in VS")
 
 Congrats, you have now run code in the address space of another process! In the next tutorial, we will explore some different ways to modify the behavior of the process you've injected into.
 
