@@ -1,5 +1,7 @@
 ---
-title: Process Injection 101 - Hello World
+title: 'Process Injection 101: Hello World'
+date: 2020-04-19 16:09:51
+tags: Process Injection, How-To, Game Hacking, C++, Windows
 category: Process Injection
 ---
 
